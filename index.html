@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Convert 0</title>
+	<title>Convert2</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -14,7 +14,7 @@
 	<header>
 		<div class="container">
 			<div class="topbar col-xs-12 col-sm-12 col-md-12">
-				<ul class="nav">
+				<ul class="pos-center nav">
 					<li class="menu-top"> <a href="#">HOME</a></li>
 					<li class="menu-top"> <a href="#">PORTFOLLO</a></li>
 					<li class="menu-top"> <a href="#">BLOG</a></li>
@@ -28,13 +28,15 @@
 				</ul>
 			</div>
 			<div class="slider col-xs-12 col-sm-12 col-md-12">
-				<div><h1>Expire</h1></div>
-				<div><p> Professionaly designed, carefully made for your enjoyement </p></div>
-				<ul class="nav">
-					<li class="slider-nemu"><a href="#">EXPLORE</a></li>
-					<li class="slider-nemu"><a href="#">LEARN MORE</a></li>
-				</ul>
-				<ul class="slider-cn nav">
+				<div class="slider-main">
+					<div><h1>Expire</h1></div>
+					<div><h5> Professionaly designed, carefully made <br> for your enjoyement </h5></div>
+					<ul class="nav">
+						<li class="slider-menu"><a href="#">EXPLORE</a></li>
+						<li class="slider-menu"><a href="#">LEARN MORE</a></li>
+					</ul>
+				</div>
+				<ul class="pos-center slider-cn nav">
 					<li class="continue"></li>
 					<li class="continue"></li>
 					<li class="continue"></li>
@@ -46,22 +48,26 @@
 		<div class="container">
 			<div class="section">
 				<h2> About Us</h2>
+				<hr id="hr-sc">
 				<p>This is who we are - or at least who we strive to be...</p>
-				<div class="row">
+				<div id="section-main" class="row">
 					<div class="col-xs-12 col-sm-12 col-md-3">
 						<p>If you can't explain it simply, you don't understand it well enough.</p>
-						<a href="#">THE MORE YOU KNOW</a>					
+						<a id="section-more" href="#">THE MORE YOU KNOW</a>					
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-3">
-						<h5>TYPOGRAPHY</h5>
-						<p>If you can't explain it simply, you don't understand it well enough.</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-3">
-						<h5>FULL ICON SET </h5>
+						<img src="images/chup.png">
+						<h5 class="icon-name">TYPOGRAPHY</h5>
 						<p>If you can't explain it simply, you don't understand it well enough.</p>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-3">
-						<h5>ACCURATE</h5>
+						<img src="images/chup.png">
+						<h5 class="icon-name">FULL ICON SET </h5>
+						<p>If you can't explain it simply, you don't understand it well enough.</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<img src="images/chup.png">
+						<h5 class="icon-name">ACCURATE</h5>
 						<p>If you can't explain it simply, you don't understand it well enough.</p>
 					</div>
 				</div>
@@ -73,7 +79,7 @@
 	</main>
 	<footer>
 		<div>
-		<p>This is the footer</p>
+		<p></p>
 	</div>
 	</footer>
 	<!-- <script src="js/bootstrap.min.js"></script>
