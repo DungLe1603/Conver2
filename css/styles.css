@@ -4,10 +4,11 @@
     
 }
 body{
-	font-size: 13px !important;
+	font-size: 14px /*!important*/;
 	box-sizing: border-box;
 }
-/*h5{ font-size: 14px !important;  }*/
+h5{ font-size: 18px;  }
+p{ font-size: 14px; }
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -16,12 +17,40 @@ header{
 	background-color: #3d4148;
 }
 
-/*ul>li{
-    margin: 10px;
-    display: block;
+.chamfer {
     position: relative;
-    float: left;
- }*/
+}
+
+.chamfer::after {
+    width: 0px;
+    height: 0px;
+    background: #fff;
+    content: '';
+    width: 50%;
+}
+
+/*.chamfer-bot{
+    background: #fff;
+}*/
+.chamfer-bot:after {
+    position: absolute;
+    bottom: -40px;
+    right: -20px;
+    background: #fff;
+    border-top: 20px solid rgba(0, 0, 0, 0);
+   /* border-right: 10px solid white;*/
+    border-left: 20px solid #d14b3a;
+}
+.chamfer-top:after {
+    position: absolute;
+    right: -20px;
+    background: #3d4148;
+    border-top: 20px solid rgba(0, 0, 0, 0);
+   /* border-right: 10px solid white;*/
+    border-left: 20px solid #fff;
+}
+
+
  .topbar{ margin: 30px; }
  /*.topbar ul{ justify-content: center; }*/
  .pos-center{ justify-content: center; }
@@ -69,7 +98,7 @@ header{
  	color: #fff;
  	text-decoration: none;
  }
- .slider-cn{margin: 30px 0;}
+ .slider-cn{margin: 30px 0; padding: 20px;}
  .continue{
  	height: 15px;
  	width: 15px;
@@ -78,30 +107,49 @@ header{
  }
  .continue:hover{background-color: #fff;
  	}
- .section{ padding: 30px 0;}
- #section-more{
+ .section{ padding: 10px 0; margin: 20px 0; }
+ .st-about{ padding: 30px 0; margin: 20px;}
+ .st-text{ font-size: 18px; margin: 20px 0; }
+ #st-about-more{
  	color: #fff;
- 	background-color: #3d4148;
+ 	font-size: 14px;
+ 	background-color: #ff3c1f;
  	padding: 5px 10px;
  	margin: 10px;
  	text-decoration: none;
  }
- #section-more:hover {
+ #st-about-more:hover {
  	/*color: #fff;*/
- 	background-color: #ff3c1f;
+ 	background-color: #3d4148;
  }
- #section-main{
+ #st-about-main{
  	margin: 30px 0;
  }
- #hr-sc{
+ #about-hr{
+ 	width: 100px;
  	color: #d14b3a;
-
-}
-.section p{
+ 	position: absolute;
+ 	left: 40px;
+ }
+.st-about p{
 	color: #4e5860;
 }
 .icon-name {
     position: absolute;
     left: 60px;
     top: 15px;
+    font-size: 18px;
+    color: #000 !important;
 }
+.st-about-icon {
+	padding: 20px;
+}
+.icon-ti{ font-size: 40px; }
+.st-paralax{ 
+	padding: 30px 0;
+	color: #fff;
+	background-color: #d14b3a; 
+	text-align: center;
+}
+#pa-hr{ width: 100px; color: #fff; }
+#author{ font-size: 18px; }
