@@ -17,6 +17,7 @@ header{
 	background-color: #3d4148;
 }
 
+
 .chamfer {
     position: relative;
 }
@@ -26,23 +27,15 @@ header{
     height: 0px;
     background: #fff;
     content: '';
-    width: 50%;
+    width: 55%;
 }
 
 /*.chamfer-bot{
     background: #fff;
 }*/
-.chamfer-bot:after {
+.chamfer-ab:after {
     position: absolute;
-    bottom: -40px;
-    right: -20px;
-    background: #fff;
-    border-top: 20px solid rgba(0, 0, 0, 0);
-   /* border-right: 10px solid white;*/
-    border-left: 20px solid #d14b3a;
-}
-.chamfer-top:after {
-    position: absolute;
+    top: -20px;
     right: -20px;
     background: #3d4148;
     border-top: 20px solid rgba(0, 0, 0, 0);
@@ -50,9 +43,8 @@ header{
     border-left: 20px solid #fff;
 }
 
-
- .topbar{ margin: 30px; }
- /*.topbar ul{ justify-content: center; }*/
+ /*.topbar{ margin: 30px; }
+ .topbar ul{ justify-content: center; }*/
  .pos-center{ justify-content: center; }
  .menu-top{ margin: 10px; }
  .menu-top a{
@@ -107,7 +99,32 @@ header{
  }
  .continue:hover{background-color: #fff;
  	}
- .section{ padding: 10px 0; margin: 20px 0; }
+
+ .section{ padding: 30px 0; background-color: #fff; }
+ .chamfer {
+    position: relative;
+}
+
+.chamfer::after {
+    width: 0px;
+    height: 0px;
+    background: #fff;
+    content: '';
+    width: 55%;
+}
+
+/*.chamfer-bot{
+    background: #fff;
+}*/
+.chamfer-ab:after {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: #3d4148;
+    border-top: 20px solid rgba(0, 0, 0, 0);
+   /* border-right: 10px solid white;*/
+    border-left: 20px solid #fff;
+}
  .st-about{ padding: 30px 0; margin: 20px;}
  .st-text{ font-size: 18px; margin: 20px 0; }
  #st-about-more{
@@ -136,7 +153,7 @@ header{
 }
 .icon-name {
     position: absolute;
-    left: 60px;
+    left: 70px;
     top: 15px;
     font-size: 18px;
     color: #000 !important;
@@ -145,11 +162,73 @@ header{
 	padding: 20px;
 }
 .icon-ti{ font-size: 40px; }
+
 .st-paralax{ 
-	padding: 30px 0;
 	color: #fff;
 	background-color: #d14b3a; 
 	text-align: center;
 }
+.chamfer-pa:after {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background: #fff;
+    border-top: 20px solid rgba(0, 0, 0, 0);
+   /* border-right: 10px solid white;*/
+    border-left: 20px solid #d14b3a;
+}
+
 #pa-hr{ width: 100px; color: #fff; }
 #author{ font-size: 18px; }
+.st-stats{ background-color: #656d7a; padding: 60px 0;}
+.blog-header{ text-align: center; }
+#stats-st{ width: 100px; color: #d14b3a; }
+.chamfer-bl{ height:  200px; background-color: #656d78;}
+.chamfer-bl:after {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background: #fff;
+    border-top: 20px solid rgba(0, 0, 0, 0);
+    border-left: 20px solid #656d78;
+}
+.blog-hr{ width: 90%; }
+.blog-post{ border: 1px solid #aab2bf; height: 350px;}
+.blog-link { 
+    color: #4e5860; 
+    text-decoration: none; 
+    text-align: center;
+}
+.blog-link:hover{ color: #ff7364; text-decoration: none;}
+.blog-list{ padding: 0 15px; }
+.blog-icon{ color: #ff7364; }
+.blog-name {
+    position: relative;
+    left: 25px;
+    top: -25px;
+}
+.blog-text{ color: #4e5860; padding: 0 10px; margin-top: -15px;}
+.read-me{ border: 1px solid #4e5860 ; }
+.read-me:hover{ border: 1px solid #ff7364 ; }
+
+.st-portf{ text-align: center;vertical-align: middle; }
+.protf-title { text-align: center; }
+.short-hr{ width: 100px; }
+.protf-grid{ height: 480px; background-color: #656d78; }
+.grid-content{ height: 240px; background-color: #52575d; }
+.grid-after{ position: absolute; bottom: 0; background-color: #dddddf; }
+..grid-after {
+    height: 75px;
+    width: 100%;
+    background-color: #fff;
+ }   
+.grid-after:after {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    background: #fff;
+    border-top: 20px solid rgba(0, 0, 0, 0);
+    border-left: 20px solid #656d78;
+}
+.grid-list{ position: absolute; right: 0; }
+.grid-link:hover { color: #ff3c1f; }
