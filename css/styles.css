@@ -33,15 +33,7 @@ header{
 /*.chamfer-bot{
     background: #fff;
 }*/
-.chamfer-ab:after {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    background: #3d4148;
-    border-top: 20px solid rgba(0, 0, 0, 0);
-   /* border-right: 10px solid white;*/
-    border-left: 20px solid #fff;
-}
+
 
  /*.topbar{ margin: 30px; }
  .topbar ul{ justify-content: center; }*/
@@ -122,7 +114,6 @@ header{
     right: -20px;
     background: #3d4148;
     border-top: 20px solid rgba(0, 0, 0, 0);
-   /* border-right: 10px solid white;*/
     border-left: 20px solid #fff;
 }
  .st-about{ padding: 30px 0; margin: 20px;}
@@ -232,3 +223,29 @@ header{
 }
 .grid-list{ position: absolute; right: 0; }
 .grid-link:hover { color: #ff3c1f; }
+
+.partners{ 
+    margin: 10px;
+    padding: 25px 15px;
+    border: 2px solid #e6e9ed; 
+}
+.partners img { height: 20px;  }
+
+.st-Testimonials{
+    text-align: center;
+    background: url(../images/st-Testimonials/Testimonials.png) center no-repeat;
+}
+.testi-part { 
+        position: absolute; 
+        bottom: 0; 
+        width: 80%; 
+        text-align: left;
+        padding: 20px;
+}
+
+footer{ 
+    background-color:  #303030; 
+    vertical-align: middle;
+    color: #fff;
+}
+.footer-icon { margin: 20px 10px; }
