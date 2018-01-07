@@ -14,23 +14,28 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="topbar col-xs-12 col-sm-12 col-md-12">
+			<div class="topbar">
 				<ul class="pos-center nav">
 					<li class="menu-top"> <a href="#">HOME</a></li>
 					<li class="menu-top"> <a href="#">PORTFOLLO</a></li>
 					<li class="menu-top"> <a href="#">BLOG</a></li>
 					<li class="menu-top">
-						<a id="avatar-img" href="#"><img src="images/avatar.png" alt="avatar"> </a> 
-						<a id="avatar-text" href="#">Expire</a>
+						<div class="avatar">
+							<a href="#"><img src="images/avatar.png" alt="avatar"> </a> 
+						<a class="avatar-text" href="#">Expire</a>
+						</div>
 					</li>
 					<li class="menu-top"> <a href="#">PAGES</a></li>
 					<li class="menu-top"> <a href="#">ABOUT US</a></li>
 					<li class="menu-top"> <a href="#">CONTACT</a></li>
 				</ul>
 			</div>
-			<div class="slider col-xs-12 col-sm-12 col-md-12">
+			<div class="slider">
+				<a class="angle angle-left" href="#"><span class="icon-ti ti-angle-left"></span></a>
+				<a class="angle angle-right" href="#"><span class="icon-ti ti-angle-right"></span></a>
 				<div class="slider-main">
 					<div><h1>Expire</h1></div>
+						<hr class="short-hr">
 					<div><h5> Professionaly designed, carefully made <br> for your enjoyement </h5></div>
 					<ul class="nav">
 						<li class="slider-menu"><a href="#">EXPLORE</a></li>
@@ -38,9 +43,9 @@
 					</ul>
 				</div>
 				<ul class="pos-center slider-cn nav">
-					<li class="continue"></li>
-					<li class="continue"></li>
-					<li class="continue"></li>
+					<li class="header-choose controls header-controls"><a href="#"></a> </li>
+					<li class="controls header-controls"><a href="#"></a> </li>
+					<li class="controls header-controls"><a href="#"></a> </li>
 				</ul>
 			</div>
 		</div>
@@ -51,28 +56,28 @@
 				<h2> About Us</h2>
 				<hr id="about-hr">
 				<br>
-				<p>This is who we are - or at least who we strive to be...</p>
+				<p class="about-text">This is who we are - or at least who we strive to be...</p>
 				<div id="st-about-main" class="row">
 					<div class="col-xs-12 col-sm-12 col-md-3">
-						<p class="st-text">If you can't explain it simply, you don't understand it well enough.</p>
+						<p class="about-text st-text">If you can't explain it simply, you don't understand it well enough.</p>
 						<a id="st-about-more" href="#">THE MORE YOU KNOW</a>					
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-3">
 						<div>
 							<span class="icon-ti ti-paragraph"></span>
 							<p class="icon-name">TYPOGRAPHY</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque </p>
+							<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque </p>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-3">
 						<span class="icon-ti ti-vector"></span>
 						<p class="icon-name">FULL ICON SET </p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque </p>
+						<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque </p>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-3">
 						<span class="icon-ti ti-ruler-alt-2"></span>
 						<p class="icon-name">ACCURATE</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque </p>
+						<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque </p>
 					</div>
 				</div>				
 			</div>		
@@ -92,7 +97,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-3">
 						<span class="icon-ti ti-user"></span>
-						<p class="icon-name">1000+ <br> Happy user </p>
+						<p class="icon-name"> <span> 1000+ <br> Happy user </span></p>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-3">
 						<span class="icon-ti ti-shopping-cart"></span>
@@ -111,10 +116,12 @@
 			</div>
 		</div>
 		<div class="section st-blog">
+			<a class="blog-link blog-link-left" href="#"><span class="icon-ti ti-angle-left"></span></a>
+			<a class="blog-link blog-link-right" href="#"><span class="icon-ti ti-angle-right"></span></a>
 			<div class="container">
 				<div class="blog-header">
 					<h2> Lates Blog Posts </h2>
-					<hr id="stats-st">
+					<hr class="short-hr" id="stats-st">
 					<p>Information is a source of learning. But unless it is organized, processed,<br>
 					and available to the right people in a format for decision making, it is a burden, not a benefit. </p>
 				</div>
@@ -122,8 +129,8 @@
 					<div class="col-xs-12 col-sm-12 col-md-4">
 						<div class="chamfer chamfer-bl"></div>
 						<div class="blog-post">
-							<a class="blog-link" href="#"><h5>Just Another Blog Post</h5></a>
-							<hr class="blog-hr">
+							<a class="blog-link" href="#">Just Another Blog Post</a>
+							<hr class="short-hr" id="blog-hr">
 							<ul class="nav">
 								<li class="blog-list">
 									<span class="blog-icon ti-user"></span>
@@ -139,15 +146,15 @@
 								</li>
 							</ul>
 							<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
-							<a class="blog-link" href="#"><h5>READ MORE</h5> </a>
+							<a class="blog-more" href="#">READ MORE </a>
 						</div>
 						
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-4">
 						<div class="chamfer chamfer-bl"></div>
 						<div class="blog-post">
-							<a class="blog-link" href="#"><h5>Blog Post With Youtube video</h5></a>
-							<hr class="blog-hr">
+							<a class="blog-link" href="#">Blog Post With Youtube video</a>
+							<hr class="short-hr" id="blog-hr">
 							<ul class="nav">
 								<li class="blog-list">
 									<span class="blog-icon ti-user"></span>
@@ -163,15 +170,15 @@
 								</li>
 							</ul>
 							<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
-							<a class="blog-link" href="#"><h5>READ MORE</h5> </a>
+							<a class="blog-more" href="#">READ MORE </a>
 						</div>
 						
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-4">
 						<div class="chamfer chamfer-bl"></div>
 						<div class="blog-post">
-							<a class="blog-link" href="#"><h5>This Could be Great</h5></a>
-							<hr class="blog-hr">
+							<a class="blog-link" href="#">This Could be Great</a>
+							<hr class="short-hr" id="blog-hr">
 							<ul class="nav">
 								<li class="blog-list">
 									<span class="blog-icon ti-paragraph"></span>
@@ -187,27 +194,27 @@
 								</li>
 							</ul>
 							<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur eveniet, praesentium illum error delectus optio nobis eaque distinctio! Suscipit nostrum?</p>
-							<a class="blog-link" href="#"><h5>READ MORE</h5> </a>
+							<a class="blog-more" href="#">READ MORE </a>
 						</div>
 						
 					</div>
-					
-					<div></div>
 				</div>
 			</div>
 		</div>
 		<div class=" section st-portf">
-			<h5> Latest portfolio </h5>
-			<hr class="short-hr">
-			<div class="protf-grid">
-				<div class="grid-content col-md-3 col-md-offset-3">
-					<div class="grid-before">
+			<h2> Latest portfolio </h2>
+			<hr class="short-hr pos-center">
+			<div class="protf-grid row">
+				<div class="grid-part col-md-3"></div>
+				<div class="grid-part col-md-3"></div>
+				<div class="grid-part grid-content col-md-3">
+					<div class="grid-top">
 						<h5>Big city</h5>
 						<p>Art, Photography, City</p>
 					</div>
-					<div class="chamfer chamfer-ab">
-						<div class="grid-list">
-						<ul class="nav">
+					<div class="grid-bot chamfer">
+						<div class="col-md-6 col-md-offset">
+						<ul class="nav grid-list">
 							<li> <a class="grid-link ti-link" href="#"></a>
 							</li>
 							<li><a class="grid-link ti-zoom-in" href="#"></a>
@@ -217,10 +224,16 @@
 						
 					</div>					
 				</div>
+				<div class="grid-part col-md-3"></div>
+				<div class="grid-part col-md-3"></div>
+				<div class="grid-part col-md-3"></div>
+				<div class="grid-part col-md-3"></div>
+				<div class="grid-part col-md-3"></div>
+				
 			</div>
-			<div class="">
-				<a class="blog-link" href="#">
-					<h5>VIEW MORE</h5> </a>
+			<div class="protf-link">
+				<a class="blog-more" href="#">
+					VIEW MORE </a>
 			</div>
 		</div>
 		<hr>
@@ -249,39 +262,45 @@
 			</div>
 		</div>
 		<div class="section st-Testimonials">
-			<h2> And what do others say? </h2>
+			<div class="container">
+				<h2> And what do others say? </h2>
 			<hr>
 			<div class="row">
-				<div class="col-md-6 testi-part chamfer chamfer-ab">
+				<div class="col-md-6">
+				  <div class="testi-part chamfer  chamfer-tt">
 					<div><img src="images/testi.png"></div>
 					<div class="testi-text">
 						<h5> Astrid Jorgensen <span>CEO at Runway inc.</span></h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at, voluptatem similique tempora voluptate quia in ea minima earum consequatur</p>
 						<ul class="nav slider-cn">
-							<li class="continue"></li>
-							<li class="continue"></li>
-							<li class="continue"></li>
+							<li class="testi-choose controls testi-controls"><a href="#"></a> </li>
+							<li class="controls testi-controls"><a href="#"></a> </li>
+							<li class="controls testi-controls"><a href="#"></a> </li>
 						</ul>
 					</div>
+				 </div>
 				</div>
-				<div class="col-md-6 testi-part chamfer  chamfer-ab">
+				<div class="col-md-6">
+				  <div class="testi-part chamfer  chamfer-tt">
 					<div>
-						<span class="ti-angle-down">EXPANDED</span>
+						<a href="#"><span class="ti-angle-down">	EXPANDED</span></a>
 					</div>
 					<div>
 						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime perferendis voluptatum maiores quos sit unde labore sed ratione ut fugiat veniam, tempora, aliquam, tenetur in vero. Suscipit quod deleniti dolor. Ex quo reiciendis consectetur magnam sed neque aut pariatur, iusto harum impedit. Harum vitae asperiores expedita excepturi deserunt eos aspernatur omnis. In, repudiandae aliquam assumenda. Qui consequatur culpa, praesentium amet dolore dignissimos quam eum! Illum mollitia et maiores unde. Amet!</p>
 						<div>
 							<a href="#"><span class="ti-angle-up"> HOVERED</span></a>
 						</div>
+						<hr>
 						<div>
 							<a href="#">INACTIVE</a>
 						</div>
 					</div>
+				 </div>
 				</div>
-				
+			</div>
 			</div>
 		</div>
-		<div class="section st-contact">
+		<div class="section st-contact chamfer chamfer-ct">
 			<div class="container">
 				<h2>Get to know us better </h2>
 				<hr>
@@ -289,44 +308,47 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div>
-							<span class="ti-location-pin">623 Fifth Avenue,<br> New York, NY 10022,<br>USA</span>
+							<span class="ti-location-pin"></span>
+							<p class="ct-icon">623 Fifth Avenue,<br> New York, NY 10022,<br>USA</p>
 						</div>
 						<div>
-							<span class="ti-email"><a href="#">randomness@expire.com</a></span>
+							<span class="ti-email"><a href="#"></span>
+							<p class="ct-icon">randomness@expire.com</a></p>
 						</div>
 						<div>
-							<span class="ti-mobile">Phone: +(123) 456 7890 <br> Fax: +(123) 456 7899</span>
+							<span class="ti-mobile"></span>
+							<p class="ct-icon">Phone: +(123) 456 7890 <br> Fax: +(123) 456 7899</p>
 						</div>
 					</div>
 					<div class="col-md-8">
 						<div class="row">
 							<div class="col-md-6">
-								<input type="text" placeholder="name">
+								<input class="text-input" type="text" placeholder="Name">
 							</div>
 							<div class="col-md-6">
-								<input type="text" placeholder="email">
+								<input class="text-input" type="text" placeholder="Email">
 							</div>
 						</div>
 						<div>
-							<input type="text" placeholder="Subject">
+							<input class="text-input" type="text" placeholder="Subject">
 						</div>
 						<div>
-							<textarea rows="5" placeholder="Mesage"></textarea>
+							<textarea class="text-input" rows="5" placeholder="Mesages"></textarea>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 		</div>
-		<div class="section st-map">
-			<img src="images/map.png">
+		<div class="section st-map chamfer chamfer-map">
+			<img class="" src="images/map.png">
 		</div>
 	</main>
 	<footer>
+		<a class="angle-up ti-angle-up"></a>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<ul class="nav footer-list">
+					<ul class="nav footer-part">
 						<li class="footer-icon ti-facebook"></li>
 						<li class="footer-icon ti-twitter"></li>
 						<li class="footer-icon ti-linkedin"></li>
@@ -335,11 +357,15 @@
 					</ul>
 				</div>
 				<div class="col-md-4">
-					<a id="avatar-img" href="#"><img src="images/avatar.png" alt="avatar"> </a> 
-					<a id="avatar-text" href="#">Expire</a>
+					<div class="footer-part avatar">
+						<a  href="#"><img src="images/avatar.png" alt="avatar"> </a> 
+						<a class="avatar-text" href="#">Expire</a>
+					</div>
 				</div>
 				<div class="col-md-4">
-					<p>© Copyright 2014, design by dingo_design</p>
+					<div class="footer-part footer-text">
+						<p>© Copyright 2014, design by dingo_design</p>
+					</div>
 				</div>
 			</div>
 		</div>
