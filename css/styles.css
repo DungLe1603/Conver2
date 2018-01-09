@@ -14,7 +14,8 @@ p{ font-size: 14px; }
 }
 a{ text-decoration: none !important; padding: 5px; }
 header{
-	color: #fff;
+    padding: 20px 0;
+	color: #fff !important;
 	background-color: #3d4148;
 }
 
@@ -41,9 +42,9 @@ header{
  .pos-center{ justify-content: center; }
  .menu-top{ margin: 10px; }
  .menu-top a{
- 	padding: 10px;
+ 
 	color: #fff;
- 	font-size: 18px;
+ 	font-size: 14px;
  	text-decoration: none;
  }
 
@@ -357,4 +358,19 @@ footer .avatar-text:hover {  color: #ff3c1f;}
     position: absolute;
     top: -15px;
     right: 30px;
+}
+
+/*style for blog page*/
+
+.menu-chane { 
+   font-size: 12px;
+   /*float: right; */
+}
+.main-blog{ margin: 20px 0; }
+.blog-date { color: #656d78; }
+.blog-content {
+    width: 90%;
+    position: relative;
+    left: 100px;
+    top: -100px;
 }
