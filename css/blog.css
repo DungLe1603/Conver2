@@ -1,0 +1,12 @@
+
+/*style for blog page*/
+
+
+.main-blog{ padding: 20px 0; }
+.blog-date { color: #656d78; }
+.blog-content {
+    width: 90%;
+    position: relative;
+    left: 100px;
+    top: -100px;
+}

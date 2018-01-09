@@ -110,21 +110,7 @@ header{
  .header-controls:hover{ background-color: #fff; }
 
  .section{ position: relative; padding: 30px 0; background-color: #fff; }
- .chamfer {
-    position: relative;
-}
 
-.chamfer::after {
-    width: 0px;
-    height: 0px;
-    background: #fff;
-    content: '';
-    width: 54%;
-}
-
-/*.chamfer-bot{
-    background: #fff;
-}*/
 .chamfer-ab:after {
     position: absolute;
     top: -20px;
@@ -199,7 +185,7 @@ header{
     border-left: 20px solid #656d78;
 }
 #blog-hr{ width: 90%; }
-.blog-post{ border: 1px solid #aab2bf; height: 350px;}
+.blog-post{ border: 1px solid #aab2bf; height: 350px; position: relative;}
 .blog-link {
     margin-left: 10px;
     padding: 5px;
@@ -360,13 +346,23 @@ footer .avatar-text:hover {  color: #ff3c1f;}
     right: 30px;
 }
 
-/*style for blog page*/
-
+.chafer-top:after {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    background: transparent;
+    border-bottom: 30px solid #ffffff;
+    border-right: 30px solid transparent;
+}
 .menu-chane { 
    font-size: 12px;
    /*float: right; */
 }
-.main-blog{ margin: 20px 0; }
+
+/*style for blog page*/
+
+
+.main-blog{ padding: 20px 0; }
 .blog-date { color: #656d78; }
 .blog-content {
     width: 90%;
@@ -374,7 +370,6 @@ footer .avatar-text:hover {  color: #ff3c1f;}
     left: 100px;
     top: -100px;
 }
-
 /*styles for typography*/
 .typ-part { padding: 20px 0; }
 .typ-heading { text-align: center;  }
@@ -383,3 +378,10 @@ footer .avatar-text:hover {  color: #ff3c1f;}
 .typ-part p { text-align: left; }
 .big-char { font-size: 24px; padding: 0 5px; color: #4e5860;}
 .big-char:hover { color: #fff; background-color: #ff3c1f; }
+
+/*styles for post page*/
+.search {position: relative; padding: 0 5px; border: 1px solid #656d78;}
+.search-icon { position: absolute; right: 5px; top: 15px; }
+.input-text { padding: 5px 10px; border-style: none; }
+.categories { margin: 20px 0; }
+.cate-right { float: right; }
