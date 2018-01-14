@@ -8,49 +8,79 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="themify-icons.css">
-	<!-- <script type="text/javascript"></script> -->
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 </head>
 <body>
 	<header>
-		<div class="container">
-			<div class="topbar">
+		<div class="topbar">
+			<div class="container">
 				<ul class="pos-center nav">
 					<li class="menu-top"> <a href="#">HOME</a></li>
-					<li class="menu-top"> <a href="#">PORTFOLLO</a></li>
-					<li class="menu-top"> <a href="blogpage.html">BLOG</a></li>
+					<li class="menu-top"> <a href="#portfolio">PORTFOLIO</a></li>
+					<li class="menu-top"> <a href="#blog">BLOG</a></li>
 					<li class="menu-top">
 						<div class="avatar">
-							<a href="#"><img src="images/avatar.png" alt="avatar"> </a> 
-						<a class="avatar-text" href="#">Expire</a>
+							<img src="images/avatar.png" alt="avatar">
+							<a href="#">Expire</a>
 						</div>
 					</li>
 					<li class="menu-top"> <a href="#">PAGES</a></li>
-					<li class="menu-top"> <a href="#">ABOUT US</a></li>
-					<li class="menu-top"> <a href="#">CONTACT</a></li>
-				</ul>
-			</div>
-			<div class="slider">
-				<a class="angle angle-left" href="#"><span class="icon-ti ti-angle-left"></span></a>
-				<a class="angle angle-right" href="#"><span class="icon-ti ti-angle-right"></span></a>
-				<div class="slider-main">
-					<div><h1>Expire</h1></div>
-					<div><h5> Professionaly designed, carefully made <br> for your enjoyement </h5></div>
-					<ul class="nav">
-						<li class="slider-menu"><a href="#">EXPLORE</a></li>
-						<li class="slider-menu"><a href="#">LEARN MORE</a></li>
-					</ul>
-				</div>
-				<ul class="pos-center slider-cn nav">
-					<li class="header-choose controls header-controls"><a href="#"></a> </li>
-					<li class="controls header-controls"><a href="#"></a> </li>
-					<li class="controls header-controls"><a href="#"></a> </li>
+					<li class="menu-top"> <a href="#about us">ABOUT US</a></li>
+					<li class="menu-top"> <a href="#contact">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
+		<div class="slider">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="controls header-controls active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1" class="controls header-controls"></li>
+				    <li data-target="#myCarousel" data-slide-to="2" class="controls header-controls"></li>
+				</ul>
+ 				<div class="carousel-inner">
+    				<div class="carousel-item active">
+    					<div class="container slider-main">
+							<div><h1>Expire1</h1></div>
+							<div><h5> Professionaly designed, carefully made <br> for your enjoyement </h5></div>
+							<ul class="nav">
+								<li class="slider-menu"><a href="#">EXPLORE</a></li>
+								<li class="slider-menu"><a href="#">LEARN MORE</a></li>
+							</ul>
+						</div>
+    				</div>
+    				<div class="carousel-item">
+    					<div class="container slider-main">
+							<div><h1>Expire2</h1></div>
+							<div><h5> Professionaly designed, carefully made <br> for your enjoyement </h5></div>
+							<ul class="nav">
+								<li class="slider-menu"><a href="#">EXPLORE</a></li>
+								<li class="slider-menu"><a href="#">LEARN MORE</a></li>
+							</ul>
+						</div>
+    				</div>
+    				<div class="carousel-item">
+    					<div class="container slider-main">
+							<div><h1>Expire3</h1></div>
+							<div><h5> Professionaly designed, carefully made <br> for your enjoyement </h5></div>
+							<ul class="nav">
+								<li class="slider-menu"><a href="#">EXPLORE</a></li>
+								<li class="slider-menu"><a href="#">LEARN MORE</a></li>
+							</ul>
+						</div>
+    				</div>
+    			</div>
+ 				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				   <span class="ti-angle-left"></span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				   <span class="ti-angle-right"></span>
+				</a>
+			</div>
+		</div>
+
 	</header>
 	<main>
-		<div class="section st-about chamfer chamfer-ab">
+		<div id="about us" class="section st-about chamfer chamfer-ab">
 			<div class="container">
 				<h2> About Us</h2>
 				<img class="hr-img" src="images/hr.png">
@@ -117,7 +147,7 @@
 				
 			</div>
 		</div>
-		<div class="section st-blog">
+		<div id="blog" class="section st-blog">
 			<a class="blog-link blog-link-left" href="#"><span class="icon-ti ti-angle-left"></span></a>
 			<a class="blog-link blog-link-right" href="#"><span class="icon-ti ti-angle-right"></span></a>
 			<div class="container">
@@ -203,34 +233,154 @@
 				</div>
 			</div>
 		</div>
-		<div class=" section st-portf">
+		<div id="portfolio" class=" section st-portf">
 			<h2> Latest portfolio </h2>
 			<img src="images/hr.png">
 			<div class="protf-grid row">
-				<div class="grid-part col-md-3"></div>
-				<div class="grid-part col-md-3"></div>
-				<div class="grid-part grid-content col-md-3">
-					<div class="grid-top">
-						<h5>Big city</h5>
-						<p>Art, Photography, City</p>
-					</div>
-					<div class="grid-bot chamfer">
-						<div class="col-md-6 col-md-offset">
-						<ul class="nav grid-list">
-							<li> <a class="grid-link ti-link" href="#"></a>
-							</li>
-							<li><a class="grid-link ti-zoom-in" href="#"></a>
-							</li>
-						</ul>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
 						</div>
-						
-					</div>					
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
 				</div>
-				<div class="grid-part col-md-3"></div>
-				<div class="grid-part col-md-3"></div>
-				<div class="grid-part col-md-3"></div>
-				<div class="grid-part col-md-3"></div>
-				<div class="grid-part col-md-3"></div>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
+						</div>
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
+				</div>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
+						</div>
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
+				</div>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
+						</div>
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
+				</div>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
+						</div>
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
+				</div>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
+						</div>
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
+				</div>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
+						</div>
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
+				</div>
+				<div class="grid-part col-md-3">
+					<div class="grid-content">
+						<div class="grid-top">
+							<h5>Big city</h5>
+							<p>Art, Photography, City</p>
+						</div>
+						<div class="grid-bot chamfer">
+							<div class="col-md-6 col-md-offset">
+							<ul class="nav grid-list">
+								<li> <a class="grid-link ti-link" href="#"></a>
+								</li>
+								<li><a class="grid-link ti-zoom-in" href="#"></a>
+								</li>
+							</ul>
+							</div>
+						</div>		
+					</div>
+				</div>
 				
 			</div>
 			<div class="protf-link">
@@ -266,7 +416,7 @@
 		<div class="section st-Testimonials">
 			<div class="container">
 				<h2 class="heading"> And what do others say? </h2>
-			<hr>
+			<hr class="short-hr">
 			<div class="row">
 				<div class="col-md-6">
 				  <div class="testi-part chamfer  chamfer-tt">
@@ -302,10 +452,10 @@
 			</div>
 			</div>
 		</div>
-		<div class="section st-contact chamfer chamfer-ct">
+		<div id="contact" class="section st-contact chamfer chamfer-ct">
 			<div class="container">
 				<h2 class="ct-header heading">Get to know us better </h2>
-				<hr>
+				<img class="hr-img" src="images/hr.png">
 				<p> Contact us, and we will contact you back. Want to chat? We can do that too.</p>
 				<div class="row">
 					<div class="col-md-4">
@@ -342,7 +492,7 @@
 			</div>
 		</div>
 		<div class="section st-map chamfer chamfer-map">
-			<img class="" src="images/map.png">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.192412108665!2d-73.97869318494094!3d40.75779257932687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fc22eb821b%3A0x361c8095799cad7f!2s623+5th+Ave%2C+New+York%2C+NY+10022!5e0!3m2!1svi!2s!4v1515692792783" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</main>
 	<footer>
@@ -351,17 +501,19 @@
 			<div class="row">
 				<div class="col-md-4">
 					<ul class="nav footer-part">
-						<li class="footer-icon ti-facebook"></li>
-						<li class="footer-icon ti-twitter"></li>
-						<li class="footer-icon ti-linkedin"></li>
-						<li class="footer-icon ti-google"></li>
-						<li class="footer-icon ti-instagram"></li>
+						<li class="footer-icon"><a href="#" class="ti-facebook"></a></li>
+						<li class="footer-icon"><a href="#" class="ti-twitter"></a></li>
+						<li class="footer-icon"><a href="#" class="ti-linkedin"></a></li>
+						<li class="footer-icon"><a href="#" class="ti-google"></a></li>
+						<li class="footer-icon"><a href="#" class="ti-instagram"></a></li>
 					</ul>
 				</div>
-				<div class="col-md-4">
-					<div class="footer-part avatar">
-						<a  href="#"><img src="images/avatar.png" alt="avatar"> </a> 
-						<a class="avatar-text" href="#">Expire</a>
+				<div class="col-md-4 avatar">
+					<div class="footer-part">
+						<div class="">
+							<img src="images/avatar.png" alt="avatar">
+							<a href="#">Expire</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -372,9 +524,9 @@
 			</div>
 		</div>
 	</footer>
-	<!-- <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery-2.1.4.min.js"></script>
- 	<script src="js/ajax-utils.js"></script>
-	<script src="js/script.js"></script> -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+  	<script src="js/ajax-utils.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	
 </body>
 </html>
