@@ -51,19 +51,24 @@ header{
 .avatar a {
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     text-decoration: none;
     position: absolute;
     top: 50px;
+    left: -15px;
  }
  .avatar a:hover { color: #fff;  border-bottom: 1px solid #f73a1e; }
 /*.slider{
     margin: 60px 0;
 }*/
+.slider h1 { font-size: 70px; }
+.slider h5 { font-size: 50px; margin: 40px 0;}
+.line-vat {margin: 30px 10px;}
 .slider-main{
     position: relative;
     margin: 90px 0;
 }
+.slider .icon-ti {font-size: }
 .angle{ 
     position: absolute;
     transform: translateY(100%); 
@@ -100,10 +105,9 @@ header{
     width:  15px !important;
     height: 15px !important;
     margin: 8px;
-    background-color: none;
  }
  .header-choose { background-color: #fff; }
- .header-controls{ border: 1px solid #fff; }
+ .header-controls{ border: 1px solid #fff;  background-color: #3d4148; }
  .header-controls:hover{ background-color: #fff; }
 
  .section{ position: relative; padding: 40px 0; background-color: #fff; }
@@ -118,7 +122,17 @@ header{
 }
  .st-about{ padding: 30px 0; margin: 20px;   font-family: 'Open Sans', sans-serif;}
  .st-text{ font-size: 18px; margin: 20px 0; }
- .st-button { font-size: 14px; }
+ .st-button { font-size: 14px;  margin: 10px 0 !important;}
+ .about-part {
+    padding: 5px;  
+    /*border-left: 1px solid #e8ebef;
+    border-right: 1px solid #e8ebef;
+    border-bottom: 1px solid #e8ebef;
+    background: url(../images/border.png)  no-repeat;
+    background-position: center top;*/
+    
+}
+.outline{ width: 90%; position: absolute; top: 0; }
  #st-about-main{
     margin: 30px 0;
  }
@@ -135,10 +149,11 @@ header{
     font-family: 'Raleway', sans-serif;
     position: absolute;
     left: 70px;
-    top: 0;
+    top: -10px;
     font-size: 18px;
 }
 .icon-number { font-size: 30px; }
+p .icon-number { margin-bottom: 10px; }
 .st-about-icon {
     padding: 20px;
 }
@@ -151,7 +166,7 @@ header{
 .pa-header { text-align: center;  font-family: 'Raleway', sans-serif; margin: 30px 0;}
 .header-text {font-size: 18px;}
 .pa-content { width: 70%;margin: auto;  position: relative;}
-.pa-text { font-family: 'Open Sans', sans-serif; font-weight:lighter; font-size: 30px; }
+.pa-text { font-family: 'Open Sans', sans-serif; font-weight:lighter; font-size: 24px; }
 .pa-text1 { font-style: italic; }
 .apostrophe {  
     font-family: 'Times New Roman';  
@@ -178,6 +193,7 @@ header{
 .st-blog { font-family: 'Raleway', sans-serif; }
 /*.st-blog p {  font-family: 'Open Sans', sans-serif;  }*/
 .blog-header{ text-align: center; }
+.blog-header p { color: #4e5860; }
 #stats-st{ width: 100px; color: #d14b3a; }
 .chamfer-bl{ height:  200px; background-color: #656d78;}
 .chamfer-bl:after {
@@ -188,12 +204,12 @@ header{
     border-top: 20px solid rgba(0, 0, 0, 0);
     border-left: 20px solid #656d78;
 }
-#blog-hr{ width: 90%; }
-.blog-post{ border: 1px solid #aab2bf; height: 350px; position: relative;}
+#blog-hr{ width: 90%; border-top: 1px solid #e6e9ed;}
+.blog-post{ padding-top: 20px; border: 1px solid #aab2bf; height: 350px; position: relative;}
 .blog-link {
     margin-left: 10px;
     padding: 5px;
-   color: #656d78; 
+   color: #4e5860; 
    text-align: center;
 }
 .blog-link-left{ position: absolute; left: 20px; top:50%;}
@@ -229,6 +245,7 @@ header{
 
 .st-portf{  font-family: 'Open Sans', sans-serif;  text-align: center;vertical-align: middle; }
 .short-hr{ width: 100px; border-top: 1px solid #fff;}
+.main-hr { margin-bottom: 0; }
 .protf-grid{ 
     margin: 30px 0;
     width: 100%;
@@ -342,7 +359,7 @@ header{
     border-left: 30px solid transparent;
 }
 footer{ 
-    height: 150px;
+    padding: 50px 0;
     position: relative;
     background-color:  #303030; 
     vertical-align: middle;
@@ -350,22 +367,19 @@ footer{
     margin-bottom: 0;
 }
 footer .avatar-text:hover {  color: #ff3c1f;}
+footer .avatar {  position: absolute; transform: translateX(150%);}
+
+footer .ti-angle-up { padding: 5px; }
 .footer-icon {margin: 10px;}
 .footer-icon a { 
     color: #fff;
     font-size: 18px; 
 }
-.avatar .footer-part img{ transform: translateX(100%); }
 .footer-part {
     width: 100%;
-    position: absolute;
-    transform: translateY(50%);
 }
-.footer-text{ transform: translateY(100%);  font-family: 'Open Sans', sans-serif;}
+.footer-text{ transform: translateY(100%);  font-family: 'Open Sans', sans-serif; text-align: right;}
 .angle-up{
-    padding: 5px;
-    width: 30px; 
-    height: 30px; 
     background-color: #57595b;
     position: absolute;
     top: -15px;
