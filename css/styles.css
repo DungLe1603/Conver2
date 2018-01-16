@@ -165,7 +165,7 @@ p .icon-number { margin-bottom: 10px; }
 }
 .pa-header { text-align: center;  font-family: 'Raleway', sans-serif; margin: 30px 0;}
 .header-text {font-size: 18px;}
-.pa-content { width: 70%;margin: auto;  position: relative;}
+.pa-content { width: 60%;margin: auto; padding-left: 10px;  position: relative;}
 .pa-text { font-family: 'Open Sans', sans-serif; font-weight:lighter; font-size: 24px; }
 .pa-text1 { font-style: italic; }
 .apostrophe {  
@@ -206,7 +206,7 @@ p .icon-number { margin-bottom: 10px; }
     border-left: 20px solid #656d78;
 }
 #blog-hr{ width: 90%; border-top: 1px solid #e6e9ed;}
-.blog-post{ padding: 20px 10px; border: 1px solid #aab2bf; height: 350px; position: relative;}
+.blog-post{ padding: 20px 10px; border: 1px solid #aab2bf; position: relative;}
 .blog-link {
     margin-left: 10px;
     padding: 5px;
@@ -220,6 +220,7 @@ p .icon-number { margin-bottom: 10px; }
     color: #ff3b1f;
 }
 .button {
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     margin: 10px;
     padding: 15px;
@@ -245,10 +246,10 @@ p .icon-number { margin-bottom: 10px; }
 .read-me:hover{ border: 1px solid #ff7364 ; }
 
 .st-portf{  font-family: 'Open Sans', sans-serif;  text-align: center;vertical-align: middle; }
-.short-hr{ width: 100px; border-top: 1px solid #fff;}
+.short-hr{ width: 100px; border-top: 1px solid #fff; padding: 10px;}
 .main-hr { margin: 0; }
 .protf-grid{ 
-    margin: 30px 0;
+    margin: 40px 0;
     width: 100%;
     height: 480px; 
     background-color: #656d78;
@@ -329,10 +330,11 @@ p .icon-number { margin-bottom: 10px; }
     left: 100px;
 }
 .testi-choose { background-color: #ff3c1f; }
-.testi-controls{ border: 1px solid #ff3c1f; }
-.testi-controls:hover{ background-color: #ff3c1f; }
+.testi-controls{ border: 1px solid #abb3c0; }
+.testi-controls:hover{ border: 1px solid #ff3c1f;  background-color: #ff3c1f; }
 .testi-text span { font-size: 14px; color: #ff3c1f; }
 .testi-vat {
+    overflow: hidden;
     position: relative;
     padding: 10px;
     border: 1px solid #eaecf0;
@@ -351,9 +353,12 @@ p .icon-number { margin-bottom: 10px; }
 .st-contact { color: #4e5860; }
 .ct-header { color: #272d32; }
 .st-contact input,
-.st-contact textarea{ width: 100%; border-top: none; margin: 10px; padding: 5px;}
-.text-input{ font-style: italic; border: 1px solid #abb2bd; }
-
+.st-contact textarea{ width: 100%; margin: 10px; padding: 5px;}
+.text-input{ 
+    font-style: italic; 
+    border: none; 
+    box-shadow: 0 -2px 1px 0.5px #aab3be inset;
+}
 .chamfer-ct:after {
     position: absolute;
     top: -30px;
@@ -383,7 +388,7 @@ p .icon-number { margin-bottom: 10px; }
     border-left: 30px solid transparent;
 }
 footer{ 
-    padding: 50px 0;
+    padding: 70px 0;
     position: relative;
     background-color:  #303030; 
     vertical-align: middle;
